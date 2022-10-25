@@ -9,7 +9,7 @@ yf.pdr_override()
 scope = ["https://spreadsheets.google.com/feeds", 'https://www.googleapis.com/auth/spreadsheets',
          "https://www.googleapis.com/auth/drive.file", "https://www.googleapis.com/auth/drive"]
 
-credentials = ServiceAccountCredentials.from_json_keyfile_name('client_secret.json', scope)
+credentials = ServiceAccountCredentials.from_json_keyfile_name('c://python/client_secret.json', scope)
 client = gspread.authorize(credentials)
 
 def strategy(stock, startyear=2022, startmonth=1, startday=1, period=60, var = 0.02):
